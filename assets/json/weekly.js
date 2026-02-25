@@ -1,56 +1,56 @@
 window.WAKATIME_WEEKLY = {
-  "updated_at": "2026-01-26T01:14:07.103Z",
+  "updated_at": "2026-02-25T03:11:23.377Z",
   "stats": {
-    "total_hours": 8.15,
-    "daily_avg": 1.16,
-    "trend": "falling",
+    "total_hours": 13.95,
+    "daily_avg": 1.99,
+    "trend": "rising",
     "max_day": {
-      "date": "2026-01-22",
-      "hours": 2.61,
-      "text": "2 hrs 36 mins"
+      "date": "2026-02-24",
+      "hours": 7.08,
+      "text": "7 hrs 4 mins"
     }
   },
   "days": [
     {
-      "date": "2026-01-20",
-      "hours": 2.18,
-      "text": "2 hrs 10 mins"
-    },
-    {
-      "date": "2026-01-21",
-      "hours": 0.69,
-      "text": "41 mins"
-    },
-    {
-      "date": "2026-01-22",
-      "hours": 2.61,
-      "text": "2 hrs 36 mins"
-    },
-    {
-      "date": "2026-01-23",
-      "hours": 2.25,
-      "text": "2 hrs 14 mins"
-    },
-    {
-      "date": "2026-01-24",
+      "date": "2026-02-19",
       "hours": 0,
       "text": "0 secs"
     },
     {
-      "date": "2026-01-25",
-      "hours": 0,
-      "text": "0 secs"
+      "date": "2026-02-20",
+      "hours": 2.82,
+      "text": "2 hrs 49 mins"
     },
     {
-      "date": "2026-01-26",
-      "hours": 0.42,
-      "text": "25 mins"
+      "date": "2026-02-21",
+      "hours": 1.76,
+      "text": "1 hr 45 mins"
+    },
+    {
+      "date": "2026-02-22",
+      "hours": 0.06,
+      "text": "3 mins"
+    },
+    {
+      "date": "2026-02-23",
+      "hours": 0.25,
+      "text": "14 mins"
+    },
+    {
+      "date": "2026-02-24",
+      "hours": 7.08,
+      "text": "7 hrs 4 mins"
+    },
+    {
+      "date": "2026-02-25",
+      "hours": 1.98,
+      "text": "1 hr 58 mins"
     }
   ],
   "ai": {
-    "title": "能量低谷",
-    "quote": "代码是冷酷的审判，懈怠只会被系统遗忘。",
-    "tarot": "🕸️ The Hermit",
-    "theme_color": "#00FFFF"
+    "title": "数据冲刷",
+    "quote": "演算法在共鸣，代码像霓虹灯般闪烁，无眠夜里见证上升。",
+    "tarot": "⚡ The Magician",
+    "theme_color": "#00FFEA"
   }
 };
