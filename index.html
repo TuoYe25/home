@@ -12,7 +12,8 @@
     <title>Edwin Home</title>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/onlinewebfonts.css"/>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/vno.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/iconfont.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5130334_s9hacifn0i.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/iconfont.css"> -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/wakatime-theme.css">
     <link rel="apple-touch-icon" href="https://unpkg.com/dmego-home-page@latest/apple-touch-icon.png">
     <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
@@ -21,7 +22,7 @@
 <body>
     <span class="mobile btn-mobile-menu">
         <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
-        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
+        <i class="social iconfont icon-up btn-mobile-close__icon hidden"></i>
     </span>
     <header id="panel" class="panel-cover">
         <div class="panel-main">
@@ -63,13 +64,10 @@
                                         <a href="/" class="blog-button">首页</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="docs/EdwinMei_CV.pdf" class="blog-button" target="_blank" onclick="event.preventDefault();">Resume</a>
+                                        <a href="docs/EdwinMei_CV.pdf" class="blog-button" target="_blank">Resume</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="docs/梅越-简历.pdf" class="blog-button" target="_blank" onclick="event.preventDefault();">简历</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://bonjour.bio/edwinm/" class="blog-button" target="_blank" onclick="event.preventDefault();">名片</a>
+                                        <a href="docs/梅越-简历.pdf" class="blog-button" target="_blank">简历</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -85,16 +83,27 @@
                                     </li>
                                     <li class="navigation__item">
                                         <a href="https://meiyue.sites.northeastern.edu/" title="university" target="_blank">
-                                            <i class='social iconfont icon-cnblogs'></i>
-                                            <span class="label">cnblogs</span>
+                                            <i class="social iconfont icon-university"></i>
+                                            <span class="label">university</span>
                                         </a>
                                     </li>
                                     <li class="navigation__item">
-                                        <!-- 上方是加密的邮箱地址, 或者用下方的明文方式 -->
-                                        <!-- <a href="javascript:decryptEmail('ZG1lYWdvQGdtYWlsLmNvbQ==');" title="email"> -->
-                                            <a href="mailto:edwin_mei-yue@foxmail.com" title="email">
+                                        <!-- Base64 encoding: btoa(email)-->
+                                        <a href="javascript:decryptEmail('ZWR3aW5fbWVpLXl1ZUBmb3htYWlsLmNvbQ==');" title="email">
                                             <i class='social iconfont icon-email'></i>
                                             <span class="label">email</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="javascript:void(0)" title="wechat" onclick="showWeChatModal();">
+                                          <i class="social iconfont icon-wechat"></i>
+                                          <span class="label">wechat</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://bonjour.bio/edwinm/" title="businesscard" target="_blank">
+                                          <i class="social iconfont icon-businesscard"></i>
+                                          <span class="label">businesscard</span>
                                         </a>
                                     </li>
                                 </ul>
