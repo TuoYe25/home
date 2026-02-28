@@ -1,8 +1,8 @@
 window.WAKATIME_WEEKLY = {
-  "updated_at": "2026-02-26T02:50:39.794Z",
+  "updated_at": "2026-02-28T02:37:12.445Z",
   "stats": {
-    "total_hours": 20.44,
-    "daily_avg": 2.92,
+    "total_hours": 22.76,
+    "daily_avg": 3.25,
     "trend": "rising",
     "max_day": {
       "date": "2026-02-24",
@@ -11,16 +11,6 @@ window.WAKATIME_WEEKLY = {
     }
   },
   "days": [
-    {
-      "date": "2026-02-20",
-      "hours": 2.82,
-      "text": "2 hrs 49 mins"
-    },
-    {
-      "date": "2026-02-21",
-      "hours": 1.76,
-      "text": "1 hr 45 mins"
-    },
     {
       "date": "2026-02-22",
       "hours": 0.06,
@@ -43,14 +33,24 @@ window.WAKATIME_WEEKLY = {
     },
     {
       "date": "2026-02-26",
-      "hours": 1.63,
-      "text": "1 hr 37 mins"
+      "hours": 1.85,
+      "text": "1 hr 51 mins"
+    },
+    {
+      "date": "2026-02-27",
+      "hours": 6.31,
+      "text": "6 hrs 18 mins"
+    },
+    {
+      "date": "2026-02-28",
+      "hours": 0.37,
+      "text": "22 mins"
     }
   ],
   "ai": {
-    "title": "能量激增",
-    "quote": "代码在夜色中燃烧，疲惫是赛博朋克的底色。",
+    "title": "数据起伏",
+    "quote": "代码如潮水，涨落之间，只有CPU知道你的努力。",
     "tarot": "⚡ The Tower",
-    "theme_color": "#00FFF7"
+    "theme_color": "#00FFEA"
   }
 };
