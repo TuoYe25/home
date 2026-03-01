@@ -8257,8 +8257,9 @@ i {
 }
 
 @media all and (max-width:960px) {
+    /* Mobile layout disabled: keep desktop-style nav visible, hide hamburger */
     .btn-mobile-menu {
-        display: block
+        display: none
     }
 
     .panel-main {
@@ -8319,16 +8320,17 @@ i {
         margin: 1em auto
     }
 
+    /* Nav always visible in place (no dropdown) */
     .navigation-wrapper {
-        display: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-        background: rgba(51, 51, 51, 0.98);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+        display: block;
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        width: auto;
+        padding: 0;
+        background: transparent;
+        border-bottom: none
     }
 
     .navigation-wrapper.visible {
@@ -8336,21 +8338,21 @@ i {
     }
 
     .cover-navigation {
-        display: block;
+        display: inline-block;
         position: relative;
         float: left;
-        clear: left;
-        width: 100%
+        clear: none;
+        width: auto
     }
 
     .cover-navigation .navigation {
-        display: block;
-        width: 100%
+        display: inline-block;
+        width: auto
     }
 
     .cover-navigation .navigation li {
-        width: 80%;
-        margin-bottom: .4em
+        width: auto;
+        margin: 5px 1px 0 0
     }
 
     .cover-navigation.navigation--social {
@@ -8359,7 +8361,7 @@ i {
 
     .cover-navigation.navigation--social .navigation li {
         display: inline-block;
-        width: 20%
+        width: auto
     }
 
     .content-wrapper {
@@ -8374,8 +8376,8 @@ i {
     }
 
     .navigation__item {
-        width: 100%;
-        margin: 0 0 .4em 0
+        width: auto;
+        margin: 5px 1px 0 0
     }
 }
 
@@ -8415,8 +8417,9 @@ i {
 }
 
 @media screen and (max-width:960px) {
+    /* Keep footer visible on mobile (same as desktop) */
     .remark {
-        display: none
+        display: block
     }
 }
 
