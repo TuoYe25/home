@@ -1,9 +1,9 @@
 window.WAKATIME_WEEKLY = {
-  "updated_at": "2026-02-28T02:37:12.445Z",
+  "updated_at": "2026-03-01T03:20:26.431Z",
   "stats": {
-    "total_hours": 22.76,
-    "daily_avg": 3.25,
-    "trend": "rising",
+    "total_hours": 26.94,
+    "daily_avg": 3.85,
+    "trend": "falling",
     "max_day": {
       "date": "2026-02-24",
       "hours": 7.08,
@@ -11,11 +11,6 @@ window.WAKATIME_WEEKLY = {
     }
   },
   "days": [
-    {
-      "date": "2026-02-22",
-      "hours": 0.06,
-      "text": "3 mins"
-    },
     {
       "date": "2026-02-23",
       "hours": 0.25,
@@ -43,14 +38,19 @@ window.WAKATIME_WEEKLY = {
     },
     {
       "date": "2026-02-28",
-      "hours": 0.37,
-      "text": "22 mins"
+      "hours": 4.61,
+      "text": "4 hrs 36 mins"
+    },
+    {
+      "date": "2026-03-01",
+      "hours": 0,
+      "text": "0 secs"
     }
   ],
   "ai": {
-    "title": "数据起伏",
-    "quote": "代码如潮水，涨落之间，只有CPU知道你的努力。",
-    "tarot": "⚡ The Tower",
-    "theme_color": "#00FFEA"
+    "title": "数据熄火",
+    "quote": "代码像旧电路，偶尔短路，总得有人修修补补。",
+    "tarot": "🌑 The Hermit",
+    "theme_color": "#00FFF7"
   }
 };
