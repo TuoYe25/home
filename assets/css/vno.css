@@ -8330,7 +8330,8 @@ i {
         width: auto;
         padding: 0;
         background: transparent;
-        border-bottom: none
+        border-bottom: none;
+        text-align: center
     }
 
     .navigation-wrapper.visible {
@@ -8340,7 +8341,7 @@ i {
     .cover-navigation {
         display: inline-block;
         position: relative;
-        float: left;
+        float: none;
         clear: none;
         width: auto
     }
