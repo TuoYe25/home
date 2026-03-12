@@ -1,36 +1,16 @@
 window.WAKATIME_WEEKLY = {
-  "updated_at": "2026-03-08T02:53:23.039Z",
+  "updated_at": "2026-03-12T02:51:35.238Z",
   "stats": {
-    "total_hours": 25.95,
-    "daily_avg": 3.71,
-    "trend": "rising",
+    "total_hours": 33.87,
+    "daily_avg": 4.84,
+    "trend": "falling",
     "max_day": {
-      "date": "2026-03-07",
-      "hours": 6.4,
-      "text": "6 hrs 24 mins"
+      "date": "2026-03-08",
+      "hours": 7.95,
+      "text": "7 hrs 57 mins"
     }
   },
   "days": [
-    {
-      "date": "2026-03-02",
-      "hours": 4.22,
-      "text": "4 hrs 12 mins"
-    },
-    {
-      "date": "2026-03-03",
-      "hours": 0.8,
-      "text": "47 mins"
-    },
-    {
-      "date": "2026-03-04",
-      "hours": 4.08,
-      "text": "4 hrs 4 mins"
-    },
-    {
-      "date": "2026-03-05",
-      "hours": 5.91,
-      "text": "5 hrs 54 mins"
-    },
     {
       "date": "2026-03-06",
       "hours": 2.76,
@@ -43,14 +23,34 @@ window.WAKATIME_WEEKLY = {
     },
     {
       "date": "2026-03-08",
-      "hours": 1.78,
-      "text": "1 hr 46 mins"
+      "hours": 7.95,
+      "text": "7 hrs 57 mins"
+    },
+    {
+      "date": "2026-03-09",
+      "hours": 4.81,
+      "text": "4 hrs 48 mins"
+    },
+    {
+      "date": "2026-03-10",
+      "hours": 6.01,
+      "text": "6 hrs"
+    },
+    {
+      "date": "2026-03-11",
+      "hours": 5.94,
+      "text": "5 hrs 56 mins"
+    },
+    {
+      "date": "2026-03-12",
+      "hours": 0,
+      "text": "0 secs"
     }
   ],
   "ai": {
-    "title": "数据狂飙",
-    "quote": "代码如风，疲惫随身，理想快递在无尽迭代路上。",
-    "tarot": "⚡ The Magician",
-    "theme_color": "#00FFF0"
+    "title": "能量衰减",
+    "quote": "代码像电池，越用越少，巅峰只是短暂的闪烁。",
+    "tarot": "🔋 The Hermit",
+    "theme_color": "#00FFF7"
   }
 };
