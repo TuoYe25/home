@@ -16,6 +16,81 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/wakatime-theme.css">
     <link rel="apple-touch-icon" href="https://unpkg.com/dmego-home-page@latest/apple-touch-icon.png">
     <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
+    <style>
+        /* Clock styles */
+        .clock-container {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            background: radial-gradient(circle at center, #ffffff, #f0f0f0);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .clock-face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        
+        .clock-number {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .clock-number span {
+            display: block;
+            transform: translateY(-50%);
+        }
+        
+        .clock-hand {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+            border-radius: 4px 4px 0 0;
+        }
+        
+        .hour-hand {
+            width: 6px;
+            height: 30%;
+            background: #333;
+            margin-left: -3px;
+        }
+        
+        .minute-hand {
+            width: 4px;
+            height: 40%;
+            background: #666;
+            margin-left: -2px;
+        }
+        
+        .second-hand {
+            width: 2px;
+            height: 45%;
+            background: #e74c3c;
+            margin-left: -1px;
+        }
+        
+        .clock-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            background: #333;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +104,33 @@
                 <div class="panel-main__content">
                     <div class="ih-item circle effect right_to_left">            
                         <a href="#" title="" class="blog-button">
-                            <div class="img"><img src="assets/img/logo.gif" alt="img" class="js-avatar iUp profilepic"></div>
+                            <div class="img">
+                                <div class="clock-container">
+                                    <div class="clock-face">
+                                        <!-- Clock Numbers -->
+                                        <div class="clock-number" style="transform: rotate(30deg);"><span>1</span></div>
+                                        <div class="clock-number" style="transform: rotate(60deg);"><span>2</span></div>
+                                        <div class="clock-number" style="transform: rotate(90deg);"><span>3</span></div>
+                                        <div class="clock-number" style="transform: rotate(120deg);"><span>4</span></div>
+                                        <div class="clock-number" style="transform: rotate(150deg);"><span>5</span></div>
+                                        <div class="clock-number" style="transform: rotate(180deg);"><span>6</span></div>
+                                        <div class="clock-number" style="transform: rotate(210deg);"><span>7</span></div>
+                                        <div class="clock-number" style="transform: rotate(240deg);"><span>8</span></div>
+                                        <div class="clock-number" style="transform: rotate(270deg);"><span>9</span></div>
+                                        <div class="clock-number" style="transform: rotate(300deg);"><span>10</span></div>
+                                        <div class="clock-number" style="transform: rotate(330deg);"><span>11</span></div>
+                                        <div class="clock-number" style="transform: rotate(0deg);"><span>12</span></div>
+                                        
+                                        <!-- Clock Hands -->
+                                        <div class="clock-hand hour-hand" id="hourHand"></div>
+                                        <div class="clock-hand minute-hand" id="minuteHand"></div>
+                                        <div class="clock-hand second-hand" id="secondHand"></div>
+                                        
+                                        <!-- Clock Center -->
+                                        <div class="clock-center"></div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="info iUp">
                                 <div class="info-back">
                                     <h2> 
@@ -130,5 +231,35 @@
     </div>
     <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
     <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/theme-loader.js"></script>
+    
+    <script type="text/javascript">
+        // Clock functionality to display local time
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours() % 12;
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            
+            // Calculate angles for each hand
+            const hourAngle = (hours * 30) + (minutes * 0.5);
+            const minuteAngle = (minutes * 6) + (seconds * 0.1);
+            const secondAngle = seconds * 6;
+            
+            // Update the clock hands
+            const hourHand = document.getElementById('hourHand');
+            const minuteHand = document.getElementById('minuteHand');
+            const secondHand = document.getElementById('secondHand');
+            
+            if (hourHand && minuteHand && secondHand) {
+                hourHand.style.transform = `translateX(-50%) rotate(${hourAngle}deg)`;
+                minuteHand.style.transform = `translateX(-50%) rotate(${minuteAngle}deg)`;
+                secondHand.style.transform = `translateX(-50%) rotate(${secondAngle}deg)`;
+            }
+        }
+        
+        // Initialize clock and update every second
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
 </body>
 </html>
