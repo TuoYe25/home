@@ -17,274 +17,92 @@
     <link rel="apple-touch-icon" href="https://unpkg.com/dmego-home-page@latest/apple-touch-icon.png">
     <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
     <style>
-        /* Clock styles - Multiple vintage pocket watch designs */
-        
-        /* Style 1: Classic Vintage Pocket Watch */
-        .clock-container.clock-style-1 {
+        /* Clock with custom images */
+        .clock-container {
             position: relative;
             width: 100%;
             padding-top: 100%; /* 1:1 Aspect Ratio */
-            background: radial-gradient(circle at center, #f8f4e5 0%, #e6dbb9 100%);
+            background: radial-gradient(circle at center, #ffffff, #f0f0f0);
             border-radius: 50%;
-            box-shadow: 
-                0 8px 20px rgba(0,0,0,0.2),
-                inset 0 2px 4px rgba(255,255,255,0.8),
-                inset 0 -2px 8px rgba(0,0,0,0.15),
-                0 0 0 8px #8b4513,
-                0 0 0 12px #a0522d;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.1);
         }
         
-        .clock-container.clock-style-1 .clock-face {
-            position: absolute;
-            top: 10%;
-            left: 10%;
-            width: 80%;
-            height: 80%;
-            border-radius: 50%;
-            background: radial-gradient(circle at center, #ffffff 0%, #f0f0f0 100%);
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        .clock-container.clock-style-1 .clock-number {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            font-family: 'Times New Roman', serif;
-            color: #333;
-        }
-        
-        .clock-container.clock-style-1 .clock-number span {
-            display: block;
-            transform: translateY(-50%);
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-        }
-        
-        /* Style 2: Ornate Pocket Watch */
-        .clock-container.clock-style-2 {
-            position: relative;
-            width: 100%;
-            padding-top: 100%; /* 1:1 Aspect Ratio */
-            background: radial-gradient(circle at center, #d4af37 0%, #b8860b 100%);
-            border-radius: 50%;
-            box-shadow: 
-                0 8px 25px rgba(0,0,0,0.25),
-                inset 0 4px 8px rgba(255,255,255,0.6),
-                inset 0 -4px 12px rgba(0,0,0,0.2),
-                0 0 0 10px #8b4513,
-                0 0 0 14px #a0522d;
-        }
-        
-        .clock-container.clock-style-2 .clock-face {
-            position: absolute;
-            top: 12%;
-            left: 12%;
-            width: 76%;
-            height: 76%;
-            border-radius: 50%;
-            background: radial-gradient(circle at center, #ffffff 0%, #f5f5f5 100%);
-            box-shadow: 
-                inset 0 2px 8px rgba(0,0,0,0.15),
-                inset 0 0 0 2px #d4af37;
-        }
-        
-        .clock-container.clock-style-2 .clock-number {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: 'Georgia', serif;
-            color: #8b0000;
-        }
-        
-        .clock-container.clock-style-2 .clock-number span {
-            display: block;
-            transform: translateY(-50%);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
-        }
-        
-        /* Style 3: Simple Elegant Pocket Watch */
-        .clock-container.clock-style-3 {
-            position: relative;
-            width: 100%;
-            padding-top: 100%; /* 1:1 Aspect Ratio */
-            background: radial-gradient(circle at center, #e0e0e0 0%, #bdbdbd 100%);
-            border-radius: 50%;
-            box-shadow: 
-                0 6px 18px rgba(0,0,0,0.2),
-                inset 0 2px 4px rgba(255,255,255,0.8),
-                inset 0 -2px 6px rgba(0,0,0,0.15),
-                0 0 0 6px #424242,
-                0 0 0 10px #616161;
-        }
-        
-        .clock-container.clock-style-3 .clock-face {
-            position: absolute;
-            top: 8%;
-            left: 8%;
-            width: 84%;
-            height: 84%;
-            border-radius: 50%;
-            background: radial-gradient(circle at center, #ffffff 0%, #fafafa 100%);
-            box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
-        }
-        
-        .clock-container.clock-style-3 .clock-number {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            font-size: 14px;
-            font-weight: 500;
-            font-family: 'Arial', sans-serif;
-            color: #212121;
-        }
-        
-        .clock-container.clock-style-3 .clock-number span {
-            display: block;
-            transform: translateY(-50%);
-        }
-        
-        /* Common styles for all clocks */
         .clock-face {
             position: absolute;
-            top: 10%;
-            left: 10%;
-            width: 80%;
-            height: 80%;
-            border-radius: 50%;
-        }
-        
-        .clock-number {
-            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            text-align: center;
+            border-radius: 50%;
+            /* Use custom dial image */
+            background-image: url('assets/img/clock/clock.png');
+            background-size: cover;
+            background-position: center;
         }
         
-        .clock-number span {
-            display: block;
-            transform: translateY(-50%);
-            /* Fix for numbers being cut off */
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
+        /* Hide default numbers since they're included in the dial image */
+        .clock-number {
+            display: none;
         }
         
-        /* Clock marks for all styles */
-        .clock-face::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 8px;
-            background: #333;
-            transform: translateX(-50%);
-        }
-        
-        .clock-face::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 8px;
-            height: 2px;
-            background: #333;
-            transform: translateY(-50%);
-        }
-        
-        .clock-face .mark {
-            position: absolute;
-            background: #666;
-            transform-origin: center;
-        }
-        
-        .clock-face .mark-hour {
-            width: 3px;
-            height: 10px;
-            background: #333;
-        }
-        
-        .clock-face .mark-minute {
-            width: 1px;
-            height: 6px;
-            background: #666;
-        }
-        
-        /* Clock hands for all styles */
         .clock-hand {
             position: absolute;
             bottom: 50%;
             left: 50%;
             transform-origin: bottom center;
-            border-radius: 6px 6px 0 0;
-            box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* Remove default background color */
+            background-color: transparent !important;
+            /* Ensure hands are visible above dial */
+            z-index: 10;
         }
         
-        .clock-container.clock-style-1 .hour-hand,
-        .clock-container.clock-style-2 .hour-hand,
-        .clock-container.clock-style-3 .hour-hand {
-            width: 6px;
-            height: 30%;
-            background: linear-gradient(to top, #333 0%, #222 100%);
-            margin-left: -3px;
-            border: 1px solid #444;
+        .hour-hand {
+            width: 15%; /* Adjust based on hand image size */
+            height: 30%; /* Adjust based on hand image size */
+            /* Use custom hour hand image */
+            background-image: url('assets/img/clock/hour-hand.png');
+            /* Center the hand horizontally */
+            margin-left: -7.5%; /* Half of width */
+            /* Ensure hand is oriented correctly */
+            transform: rotate(0deg);
         }
         
-        .clock-container.clock-style-1 .minute-hand,
-        .clock-container.clock-style-2 .minute-hand,
-        .clock-container.clock-style-3 .minute-hand {
-            width: 4px;
-            height: 40%;
-            background: linear-gradient(to top, #555 0%, #333 100%);
-            margin-left: -2px;
-            border: 1px solid #666;
+        .minute-hand {
+            width: 10%; /* Adjust based on hand image size */
+            height: 40%; /* Adjust based on hand image size */
+            /* Use custom minute hand image */
+            background-image: url('assets/img/clock/minute-hand.png');
+            /* Center the hand horizontally */
+            margin-left: -5%; /* Half of width */
+            /* Ensure hand is oriented correctly */
+            transform: rotate(0deg);
         }
         
-        .clock-container.clock-style-1 .second-hand,
-        .clock-container.clock-style-2 .second-hand {
-            width: 2px;
-            height: 45%;
-            background: linear-gradient(to top, #dc143c 0%, #b22222 100%);
-            margin-left: -1px;
-        }
-        
-        .clock-container.clock-style-3 .second-hand {
-            width: 2px;
-            height: 45%;
-            background: linear-gradient(to top, #1976d2 0%, #1565c0 100%);
-            margin-left: -1px;
+        .second-hand {
+            width: 5%; /* Adjust based on hand image size */
+            height: 45%; /* Adjust based on hand image size */
+            /* Use custom second hand image */
+            background-image: url('assets/img/clock/second-hand.png');
+            /* Center the hand horizontally */
+            margin-left: -2.5%; /* Half of width */
+            /* Ensure hand is oriented correctly */
+            transform: rotate(0deg);
         }
         
         .clock-center {
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 14px;
-            height: 14px;
-            background: radial-gradient(circle at center, #ffffff 0%, #e0e0e0 100%);
+            width: 12px;
+            height: 12px;
+            background: #333;
             border-radius: 50%;
             transform: translate(-50%, -50%);
-            box-shadow: 
-                0 0 0 2px #333,
-                inset 0 1px 2px rgba(0,0,0,0.2);
-        }
-        
-        /* Style 2 specific center */
-        .clock-container.clock-style-2 .clock-center {
-            background: radial-gradient(circle at center, #d4af37 0%, #b8860b 100%);
-            box-shadow: 
-                0 0 0 2px #8b0000,
-                inset 0 1px 2px rgba(255,255,255,0.3);
+            /* Ensure center is visible above hands */
+            z-index: 20;
         }
     </style>
 </head>
@@ -301,21 +119,21 @@
                     <div class="ih-item circle effect right_to_left">            
                         <a href="#" title="" class="blog-button">
                             <div class="img">
-                                <div class="clock-container clock-style-1" id="clockContainer">
+                                <div class="clock-container" id="clockContainer">
                                     <div class="clock-face">
-                                        <!-- Clock Numbers - Fixed positioning -->
-                                        <div class="clock-number" style="top: 10%; left: 50%; transform: translateX(-50%);"><span>12</span></div>
-                                        <div class="clock-number" style="top: 50%; right: 10%; transform: translateY(-50%);"><span>3</span></div>
-                                        <div class="clock-number" style="bottom: 10%; left: 50%; transform: translateX(-50%);"><span>6</span></div>
-                                        <div class="clock-number" style="top: 50%; left: 10%; transform: translateY(-50%);"><span>9</span></div>
-                                        <div class="clock-number" style="top: 25%; right: 25%; transform: rotate(30deg);"><span>1</span></div>
-                                        <div class="clock-number" style="top: 25%; right: 25%; transform: rotate(60deg);"><span>2</span></div>
-                                        <div class="clock-number" style="bottom: 25%; right: 25%; transform: rotate(120deg);"><span>4</span></div>
-                                        <div class="clock-number" style="bottom: 25%; right: 25%; transform: rotate(150deg);"><span>5</span></div>
-                                        <div class="clock-number" style="bottom: 25%; left: 25%; transform: rotate(210deg);"><span>7</span></div>
-                                        <div class="clock-number" style="bottom: 25%; left: 25%; transform: rotate(240deg);"><span>8</span></div>
-                                        <div class="clock-number" style="top: 25%; left: 25%; transform: rotate(300deg);"><span>10</span></div>
-                                        <div class="clock-number" style="top: 25%; left: 25%; transform: rotate(330deg);"><span>11</span></div>
+                                        <!-- Clock Numbers -->
+                                        <div class="clock-number" style="transform: rotate(0deg);"><span>12</span></div>
+                                        <div class="clock-number" style="transform: rotate(30deg);"><span>1</span></div>
+                                        <div class="clock-number" style="transform: rotate(60deg);"><span>2</span></div>
+                                        <div class="clock-number" style="transform: rotate(90deg);"><span>3</span></div>
+                                        <div class="clock-number" style="transform: rotate(120deg);"><span>4</span></div>
+                                        <div class="clock-number" style="transform: rotate(150deg);"><span>5</span></div>
+                                        <div class="clock-number" style="transform: rotate(180deg);"><span>6</span></div>
+                                        <div class="clock-number" style="transform: rotate(210deg);"><span>7</span></div>
+                                        <div class="clock-number" style="transform: rotate(240deg);"><span>8</span></div>
+                                        <div class="clock-number" style="transform: rotate(270deg);"><span>9</span></div>
+                                        <div class="clock-number" style="transform: rotate(300deg);"><span>10</span></div>
+                                        <div class="clock-number" style="transform: rotate(330deg);"><span>11</span></div>
                                         
                                         <!-- Clock Hands -->
                                         <div class="clock-hand hour-hand" id="hourHand"></div>
@@ -420,16 +238,6 @@
                 <a href="https://hitokoto.cn/" target="_blank"> Hitokoto </a>
             </p>
         </div>
-        
-        <!-- Clock Style Selector -->
-        <div class="clock-style-selector iUp" style="position: absolute; bottom: 20px; right: 20px; z-index: 10; text-align: center;">
-            <p style="margin: 0 0 5px 0; font-size: 12px; color: rgba(255,255,255,0.8);">选择钟表样式</p>
-            <div style="display: flex; gap: 5px; justify-content: center;">
-                <button onclick="changeClockStyle(1)" style="padding: 5px 10px; background: #8b4513; color: white; border: none; border-radius: 4px; font-size: 11px; cursor: pointer;">经典复古</button>
-                <button onclick="changeClockStyle(2)" style="padding: 5px 10px; background: #d4af37; color: white; border: none; border-radius: 4px; font-size: 11px; cursor: pointer;">华丽装饰</button>
-                <button onclick="changeClockStyle(3)" style="padding: 5px 10px; background: #424242; color: white; border: none; border-radius: 4px; font-size: 11px; cursor: pointer;">简约优雅</button>
-            </div>
-        </div>
     </header>
     <!-- WeChat Modal -->
     <div id="wechatModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 1000; justify-content: center; align-items: center; flex-direction: column; opacity: 0; visibility: hidden; transition: opacity 0.3s ease;" onclick="closeWeChatModal()">
@@ -457,20 +265,10 @@
             const secondHand = document.getElementById('secondHand');
             
             if (hourHand && minuteHand && secondHand) {
-                hourHand.style.transform = `translateX(-50%) rotate(${hourAngle}deg)`;
-                minuteHand.style.transform = `translateX(-50%) rotate(${minuteAngle}deg)`;
-                secondHand.style.transform = `translateX(-50%) rotate(${secondAngle}deg)`;
-            }
-        }
-        
-        // Change clock style function
-        function changeClockStyle(styleNumber) {
-            const clockContainer = document.getElementById('clockContainer');
-            if (clockContainer) {
-                // Remove all style classes
-                clockContainer.classList.remove('clock-style-1', 'clock-style-2', 'clock-style-3');
-                // Add the selected style class
-                clockContainer.classList.add(`clock-style-${styleNumber}`);
+                // Remove translateX(-50%) since we're using margin-left for centering
+                hourHand.style.transform = `rotate(${hourAngle}deg)`;
+                minuteHand.style.transform = `rotate(${minuteAngle}deg)`;
+                secondHand.style.transform = `rotate(${secondAngle}deg)`;
             }
         }
         
