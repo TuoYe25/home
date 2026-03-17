@@ -1,41 +1,16 @@
 window.WAKATIME_WEEKLY = {
-  "updated_at": "2026-03-12T02:51:35.238Z",
+  "updated_at": "2026-03-17T02:51:25.913Z",
   "stats": {
-    "total_hours": 33.87,
-    "daily_avg": 4.84,
+    "total_hours": 25.87,
+    "daily_avg": 3.7,
     "trend": "falling",
     "max_day": {
-      "date": "2026-03-08",
-      "hours": 7.95,
-      "text": "7 hrs 57 mins"
+      "date": "2026-03-11",
+      "hours": 5.94,
+      "text": "5 hrs 56 mins"
     }
   },
   "days": [
-    {
-      "date": "2026-03-06",
-      "hours": 2.76,
-      "text": "2 hrs 45 mins"
-    },
-    {
-      "date": "2026-03-07",
-      "hours": 6.4,
-      "text": "6 hrs 24 mins"
-    },
-    {
-      "date": "2026-03-08",
-      "hours": 7.95,
-      "text": "7 hrs 57 mins"
-    },
-    {
-      "date": "2026-03-09",
-      "hours": 4.81,
-      "text": "4 hrs 48 mins"
-    },
-    {
-      "date": "2026-03-10",
-      "hours": 6.01,
-      "text": "6 hrs"
-    },
     {
       "date": "2026-03-11",
       "hours": 5.94,
@@ -43,14 +18,39 @@ window.WAKATIME_WEEKLY = {
     },
     {
       "date": "2026-03-12",
+      "hours": 5.43,
+      "text": "5 hrs 25 mins"
+    },
+    {
+      "date": "2026-03-13",
+      "hours": 4.74,
+      "text": "4 hrs 44 mins"
+    },
+    {
+      "date": "2026-03-14",
       "hours": 0,
       "text": "0 secs"
+    },
+    {
+      "date": "2026-03-15",
+      "hours": 4.11,
+      "text": "4 hrs 6 mins"
+    },
+    {
+      "date": "2026-03-16",
+      "hours": 3.73,
+      "text": "3 hrs 43 mins"
+    },
+    {
+      "date": "2026-03-17",
+      "hours": 1.92,
+      "text": "1 hr 55 mins"
     }
   ],
   "ai": {
-    "title": "能量衰减",
-    "quote": "代码像电池，越用越少，巅峰只是短暂的闪烁。",
+    "title": "能量泄露",
+    "quote": "代码像蒸汽，已在赛博隧道里慢慢消散。",
     "tarot": "🔋 The Hermit",
-    "theme_color": "#00FFF7"
+    "theme_color": "#00FFE7"
   }
 };
